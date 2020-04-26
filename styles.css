@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f3d8d8;
+}
+
+h1 {
+  padding-bottom: 200px; 
+}
+
+.eye {
+  width: 245px;
+}
+
+.eye-center {
+  animation-name: eye-center;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.eye-center-whitedot {
+  animation-name: eye-center-whitedot;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes eye-center {
+  30% {
+    transform: translateX(-20px)
+  }
+  60% {
+    transform: translateX(15px) scale(1.05);
+  }
+}
+
+@keyframes eye-center-whitedot {
+  30% {
+    transform: translateX(-20px)
+  }
+  60% {
+    transform: translateY(15px)
+  }
+}
